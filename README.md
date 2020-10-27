@@ -61,7 +61,7 @@ zookeeper_environment: {}
 | Log files                                  | `/var/log/zookeeper`                        |
 | Data directory for snapshots and myid file | `/var/lib/zookeeper`                        |
 | Data directory for transaction log files   | `/var/lib/zookeeper`                        |
-| Systemd service                            | `/usr/lib/systemd/system/zookeeper.service` |
+| Systemd service                            | `/etc/systemd/system/zookeeper.service`     |
 | System Defaults                            | `/etc/default/zookeeper`                    |
 
 ## Starting and Stopping ZooKeeper services
