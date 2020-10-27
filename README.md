@@ -78,6 +78,11 @@ No dependencies
 ````
 ansible-playbook -i inventory main.yml -vvv
 ````
+to check Leader/follower
+````
+ansible-playbook -i inventory main.yml -vvv --tags zookeeper_testing
+
+````
 
 ## License
 

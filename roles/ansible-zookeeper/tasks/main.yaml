@@ -178,3 +178,7 @@
     zookeeper_installed: true
   tags:
     - zookeeper_install_fact
+- name: Check leader
+  command: "{{ zookeeper_dir }}/bin/zkServer.sh status"
+  tags:
+    - zookeeper_testing
