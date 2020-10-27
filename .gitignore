@@ -1,6 +1,7 @@
 # General file ignores
 .DS_Store
 key
+main.retry
 # Python files for Molecule testing
 .Python
 bin/
