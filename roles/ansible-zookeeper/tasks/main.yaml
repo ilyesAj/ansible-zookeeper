@@ -158,7 +158,7 @@
   systemd:
     name: zookeeper.service
     state: started
-    enabled: yes
+    # enabled: yes
   tags:
     - zookeeper_service
 

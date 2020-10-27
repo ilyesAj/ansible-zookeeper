@@ -1,7 +1,10 @@
-zookeeper-1 ansible_host=10.0.1.7 ansible_connection=ssh ansible_user=linuxadmin ansible_ssh_private_key_file=/root/ansible-zookeeper/key ansible_become=yes ansible_become_method=sudo
-zookeeper-2 ansible_host=10.0.1.6 ansible_connection=ssh ansible_user=linuxadmin ansible_ssh_private_key_file=/root/ansible-zookeeper/key ansible_become=yes ansible_become_method=sudo
-zookeeper-3 ansible_host=10.0.1.5 ansible_connection=ssh ansible_user=linuxadmin ansible_ssh_private_key_file=/root/ansible-zookeeper/key ansible_become=yes ansible_become_method=sudo
+zookeeper-1 ansible_host=postgres-0 ansible_connection=ssh ansible_user=linuxadmin ansible_ssh_private_key_file=/root/ansible-zookeeper/key ansible_become=yes ansible_become_method=sudo
+zookeeper-2 ansible_host=postgres-1 ansible_connection=ssh ansible_user=linuxadmin ansible_ssh_private_key_file=/root/ansible-zookeeper/key ansible_become=yes ansible_become_method=sudo
+zookeeper-3 ansible_host=postgres-2 ansible_connection=ssh ansible_user=linuxadmin ansible_ssh_private_key_file=/root/ansible-zookeeper/key ansible_become=yes ansible_become_method=sudo
+
+zookeeper-4 ansible_host=vm-zk-0 ansible_connection=ssh ansible_user=linuxadmin ansible_ssh_private_key_file=/root/ansible-zookeeper/key ansible_become=yes ansible_become_method=sudo
 [zookeeper-nodes]
 zookeeper-1 zookeeper_id=1
 zookeeper-2 zookeeper_id=2
 zookeeper-3 zookeeper_id=3
+zookeeper-4 zookeeper_id=4
