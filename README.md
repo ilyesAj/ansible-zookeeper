@@ -15,6 +15,7 @@ Java: Java 8
 
 ## Role Variables
 
+````yml
 ---
 zookeeper_mirror: https://downloads.apache.org/zookeeper/stable
 zookeeper_version: 3.5.8
@@ -40,7 +41,7 @@ zookeeper_election_port: 3888
 
 zookeeper_servers: "{{groups['zookeeper-nodes']}}"
 zookeeper_environment: {}
-
+````
 
 ### Default Ports
 
