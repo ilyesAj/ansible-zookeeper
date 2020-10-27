@@ -22,7 +22,7 @@
 
 - name: Download Apache ZooKeeper
   get_url:
-    url: '{{ zookeeper_mirror }}/zookeeper-{{ zookeeper_version }}/{{ zookeeper_package }}'
+    url: '{{ zookeeper_mirror }}/{{ zookeeper_package }}'
     dest: /tmp
   when: not dir.stat.exists
   tags:
@@ -148,7 +148,7 @@
 - name: Template ZooKeeper systemd service file
   template:
     src: zookeeper.service.j2
-    dest: /usr/lib/systemd/system/zookeeper.service
+    dest: /etc/systemd/system/zookeeper.service
   notify:
     - Restart ZooKeeper service
   tags:

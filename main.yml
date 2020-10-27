@@ -3,8 +3,8 @@
   pre_tasks:
     - name: Install Java 8 (OpenJDK)
       apt:
-        name: java-1.8.0-openjdk
-        state: installed
+        name: openjdk-8-jre-headless
+        state: present
       tags:
         - requirements
   roles:
